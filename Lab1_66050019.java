@@ -2,13 +2,14 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FiniteAutomata {
+public class Lab1_66050019 {
     private boolean isFinal;
-    public FiniteAutomata() {
-        // Constructor to initialize the finite automaton
+    public Lab1_66050019() {
+        
+        // Lab Java File นี้มีข้อ 5, 6, 9 ครับ
         
     }
-    private void q5(){
+    private void Q5(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the input string: ");
         String input = sc.nextLine();
@@ -92,13 +93,13 @@ public class FiniteAutomata {
     public static void main(String[] args) {
 
         // Example usage of the FiniteAutomata class
-        FiniteAutomata fa = new FiniteAutomata();
-        // fa.q5();
-        // fa.q6();
-        fa.q9();
+        Lab1_66050019 lab = new Lab1_66050019();
+        // lab.Q5();
+        // lab.Q6();
+        lab.Q9();
     }
 
-    private void q6(){
+    private void Q6(){
         System.out.println("-----------Regular Expresion---------");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the input string: ");
@@ -113,14 +114,14 @@ public class FiniteAutomata {
             System.out.println("Reject");
         }
     }
-    private void q9(){
+    private void Q9(){
         System.out.println("-----------Regular Expresion---------");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the input string: ");
         String input = sc.nextLine();
         sc.close();
 
-        Pattern pattern = Pattern.compile("^([ab]{3})+$");
+        Pattern pattern = Pattern.compile("^([ab]{3})*$");
         Matcher matcher = pattern.matcher(input);
         if (matcher.find()) {
             System.out.println("Accept");

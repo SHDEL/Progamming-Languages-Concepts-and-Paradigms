@@ -1,0 +1,5 @@
+
+line:2, error type: "Data type mismatch" data: "1234a6,Anthony,Hopkins,56789.50"
+line:3, error type: "Data type mismatch" data: "12347,Clark,Kent,78w956.75"
+line:5, error type: "Data type mismatch" data: "12349,Tony,5896.78"
+line:7, error type: "Data type mismatch" data: "12350,Marray,Jane,Watson,890123.56 "
